@@ -39,6 +39,21 @@ a{
     height:450px;
     background-repeat: no-repeat;
     background-position: right;
-    
+}
+.half-width-1{
+    background-color:whitesmoke;
+    width:40%;
+    margin-left: 5%;
+    padding:2%;
+    float:left;
+    height: 450px;
+    margin-top: 50px;
 
+    box-shadow: 15px 15px 45px gray ;
+    border-left: 5px solid orangered;
+    border-radius:15px;
+}
+p{
+    text-align: justify;
+    word-spacing: 20px;
 }
