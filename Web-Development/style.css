@@ -57,3 +57,15 @@ p{
     text-align: justify;
     word-spacing: 20px;
 }
+#box-shadow-right{
+    border: 2px solid;
+    border-image: linear-gradient(180deg, blue, cyan);
+    border-image-slice: 1;
+    border-radius: 12px;
+}
+#box-shadow-left{
+    border: 2px solid;
+    border-image: linear-gradient(180deg, green, cyan);
+    border-image-slice: 1;
+    border-radius: 12px;
+}
