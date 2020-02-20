@@ -3,6 +3,44 @@ body{
 }
 h1{
     font-size: 30px;
+    animation: mahbub 2s infinite;
+}
+@keyframes mahbub{
+    0%{
+        color: coral;
+    }
+    25%{
+        color: cyan;
+    }
+    50%{
+        color:lightblue;
+    }
+    75%{
+        color: darkgreen;
+    }
+    100%{
+        color: coral;
+    }
+}
+h2, h3{
+       animation: mahbub 2s infinite;
+}
+@keyframes mahbub{
+    0%{
+        color: coral;
+    }
+    25%{
+        color: cyan;
+    }
+    50%{
+        color:lightblue;
+    }
+    75%{
+        color: darkgreen;
+    }
+    100%{
+        color: coral;
+    }
 }
 span{
     color:orange;
@@ -34,6 +72,15 @@ a{
     background-image: linear-gradient(45deg, lightsalmon, tomato);
     padding: 6px;   
 }
+a:hover{
+    text-decoration: none;
+    border: 2px double black;
+    border-radius: 10px;
+    color: coral;
+    background-image: linear-gradient(45deg, blue, cyan);
+    padding: 6px; 
+    transition: 1s ease-in;  
+}
 .middle-banner{
     background-image: url("dream-bg.png");
     height:450px;
@@ -64,21 +111,38 @@ p{
     border-left: 7px solid;
     border-image: linear-gradient(180deg, blue, cyan);
     border-image-slice: 1;
-
     box-shadow: 15px 15px 45px gray ;
     border-left: 5px solid orangered;
   
+}
+.box-shadow-right:hover{
+    border-image: linear-gradient(190deg, blue, cyan);
+    transform: translateY(-10px);
+    transition:1s ease-in;
+    background-image: linear-gradient(180deg, whitesmoke, lightsalmon);
+    border-radius:10px;
+    border: 7px solid;
+    box-shadow: 15px 15px 45px gray ;
 }
 .box-shadow-left{
     background-color:whitesmoke;
     border-left: 7px solid;
     border-image: linear-gradient(180deg, lightsalmon, cyan);
     border-image-slice: 1;
-
     box-shadow: 15px 15px 45px gray ;
     border-left: 5px solid orangered;
-
 }
+.box-shadow-left:hover{
+    background-color:whitesmoke;
+    border: 7px solid;
+    border-image: linear-gradient(180deg, lightsalmon, cyan);
+    border-image-slice: 1;
+    box-shadow: 15px 15px 45px gray ;
+    transform:translateX(-10px);
+    background-image: linear-gradient(190deg, lightgreen, lightsalmon);
+    transition: 1s ease-in-out;
+}
+
 footer{
     width: 50%;
     padding:15px;
